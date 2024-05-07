@@ -1,1 +1,35 @@
-dummy1
+using UnityEngine;
+ 
+public class UseIf : MonoBehaviour {
+ 
+    void Update () {
+ 
+        if(Input.GetKeyDown(KeyCode.A))
+        {
+            KeyDown_A();
+        }
+ 
+        if(Input.GetKeyDown(KeyCode.B))
+        {
+            KeyDown_B();
+        }
+ 
+        if(Input.GetKeyDown(KeyCode.C))
+        {
+            KeyDown_C();
+        }
+ 
+    }
+    private void KeyDown_A()
+    {
+        Debug.Log("A");
+    }
+    private void KeyDown_B()
+    {
+        Debug.Log("B");
+    }
+    private void KeyDown_C()
+    {
+        Debug.Log("C");
+    }
+}
